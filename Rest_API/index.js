@@ -50,6 +50,6 @@ app.use("/Rest_API/auth", authRoute);
 app.use("/Rest_API/users", userRoute);
 app.use("/Rest_API/posts", postRoute);
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Backend server is running!");
 });
